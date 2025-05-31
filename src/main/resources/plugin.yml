@@ -1,0 +1,5 @@
+name: crazy_drop
+version: '1.0-SNAPSHOT'
+main: gnt.plugin.crazy_drop.Crazy_drop
+api-version: '1.21'
+authors: [ jaiderssjgod ]
