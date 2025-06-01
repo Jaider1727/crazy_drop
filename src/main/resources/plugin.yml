@@ -3,3 +3,9 @@ version: '1.0-SNAPSHOT'
 main: gnt.plugin.crazy_drop.Crazy_drop
 api-version: '1.21'
 authors: [ jaiderssjgod ]
+
+commands:
+  crazydrop:
+    usage: /crazydrop <reload>
+    permission: crazydrop.reload
+    permission-message: "&cNo tienes permiso para usar este comando."
