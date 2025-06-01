@@ -12,7 +12,6 @@ public final class Crazy_drop extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
         Bukkit.getPluginManager().registerEvents(new EndermanKillListener(), this);
 
-
         getLogger().info(ChatColor.GREEN + "Crazy Drop Plugin Enabled");
     }
 
