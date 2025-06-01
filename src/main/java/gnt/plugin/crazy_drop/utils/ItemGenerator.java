@@ -25,7 +25,8 @@ public final class ItemGenerator {
                         || name.endsWith("_HELMET")
                         || name.endsWith("_CHESTPLATE")
                         || name.endsWith("_LEGGINGS")
-                        || name.endsWith("_BOOTS");
+                        || name.endsWith("_BOOTS")
+                        || name.endsWith("BOW");
             })
             .collect(Collectors.toSet());
 

@@ -1,8 +1,6 @@
 package gnt.plugin.crazy_drop.utils;
 
-
 import org.bukkit.enchantments.Enchantment;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,20 +11,21 @@ import java.util.concurrent.ThreadLocalRandom;
 public final class EnchantmentUtils {
 
     // Mapa de encantamientos con su peso
-    private static final Map<Enchantment, Integer> ENCANTAMIENTOS_CON_PESO = Map.ofEntries(
-            Map.entry(Enchantment.UNBREAKING, 30),
-            Map.entry(Enchantment.EFFICIENCY, 25),
-            Map.entry(Enchantment.MENDING, 20),
-            Map.entry(Enchantment.SHARPNESS, 15),
-            Map.entry(Enchantment.FIRE_ASPECT, 10),
-            Map.entry(Enchantment.FORTUNE, 10),
-            Map.entry(Enchantment.POWER, 5),
-            Map.entry(Enchantment.PUNCH, 5),
-            Map.entry(Enchantment.PROTECTION, 5),
-            Map.entry(Enchantment.SILK_TOUCH, 5),
-            Map.entry(Enchantment.THORNS, 5),
-            Map.entry(Enchantment.LOOTING, 5)
+    public static final Map<Enchantment, Integer> ENCANTAMIENTOS_CON_PESO = Map.ofEntries(
+            Map.entry(Enchantment.UNBREAKING,    1),
+            Map.entry(Enchantment.EFFICIENCY,    1),
+            Map.entry(Enchantment.PROTECTION,    1),
+            Map.entry(Enchantment.SHARPNESS,     1),
+            Map.entry(Enchantment.FORTUNE,       1),
+            Map.entry(Enchantment.FIRE_ASPECT,   1),
+            Map.entry(Enchantment.POWER,         1),
+            Map.entry(Enchantment.LOOTING,       1),
+            Map.entry(Enchantment.SILK_TOUCH,    1),
+            Map.entry(Enchantment.PUNCH,         1),
+            Map.entry(Enchantment.THORNS,        1),
+            Map.entry(Enchantment.KNOCKBACK,        1)
     );
+
 
     // Elegir un encantamiento aleatorio con probabilidad según peso
     public static Enchantment seleccionarEncantamientoConProbabilidad(Set<Enchantment> excluidos) {
